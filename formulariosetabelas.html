@@ -1,134 +1,161 @@
-<form action="/enviar-dados" method="POST">
-  <div>
-    <br />
-    <h1>Inscrição para campeonato de vôlei</h1>
-    <label for="nome">Nome do Responsavel:</label>
-    <input
-      type="text"
-      id="nome"
-      name="usuario_nome"
-      placeholder="Digite o nome do responável completo"
-      required
-    />
-    <br />
-  </div>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <style>
+      body {
+        background-color: lightblue;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="/enviar-dados" method="POST">
+      <div>
+        <br />
 
-  <div>
-    <br />
-    <label for="cpf">CPF:</label>
-    <input
-      type="text"
-      id="cpf"
-      id="documento_cpf"
-      placeholder="Digite seu CPF"
-    />
-    <br />
-  </div>
+        <h1
+          style="
+            color: rgb(22, 118, 228);
+            background-color: lightgoldenrodyellow;
+          "
+        >
+          Inscrição para campeonato de vôlei
+        </h1>
+        <label for="nome" id="nome">Nome do Responsavel:</label>
 
-  <div>
-    <br />
-    <label for="time">Nome do time:</label>
-    <input type="text" id="time" placeholder=" Digite o nome do seu time" />
-    <br />
-  </div>
-  <div>
-    <br />
-    <label for="quantidade">Quantidade de Jogadores:</label>
-    <input
-      type="quantidade"
-      id="quantidade"
-      name="quanridade"
-      placeholder="Digite quantos jogadores tem no time"
-    />
-    <br />
-  </div>
+        <input
+          type="text"
+          id="nome"
+          name="usuario_nome"
+          placeholder="Digite o nome do responável completo"
+          required
+        />
+        <br />
+      </div>
 
-  <div>
-    <br />
-    <label for="categoria">Qual a sua categoria:</label>
-    <input
-      type="categoria"
-      id="categoria"
-      name="categoria"
-      placeholder="Digite sua categoria"
-    />
-    <br />
-  </div>
-  <div>
-    <br />
-    <label for="mensagem">Observações:</label>
-    <textarea
-      id="mensagem"
-      name="usuario_mensagem"
-      rows="4"
-      cols="50"
-    ></textarea>
-    <br />
-  </div>
+      <div>
+        <br />
+        <label for="cpf">CPF:</label>
+        <input
+          type="text"
+          id="cpf"
+          id="documento_cpf"
+          placeholder="Digite seu CPF"
+        />
+        <br />
+      </div>
 
-  <div>
-    <br />
-    <button type="submit">Enviar Formulário</button>
-    <br />
-  </div>
+      <div>
+        <br />
+        <label for="time">Nome do time:</label>
+        <input type="text" id="time" placeholder=" Digite o nome do seu time" />
+        <br />
+      </div>
+      <div>
+        <br />
+        <label for="quantidade">Quantidade de Jogadores:</label>
+        <input
+          type="quantidade"
+          id="quantidade"
+          name="quanridade"
+          placeholder="Digite quantos jogadores tem no time"
+        />
+        <br />
+      </div>
 
-  <div>
-    <p>
-      Você aceita participar do campeonato estando ciente dos custos logísticos
-      individuais? Nota: Ao responder positivamente, o atleta declara estar
-      ciente e de acordo de que todas as despesas com transporte, alimentação,
-      hospedagem e inscrição serão de sua integral e exclusiva responsabilidade
-      financeira. caso aceitar, está inscrito no campeonato
-    </p>
-    <input type="radio" id="sim" name="newsletter" value="s" />
-    <label for="sim">Sim, estou ciente</label>
+      <div>
+        <br />
+        <label for="categoria">Qual a sua categoria:</label>
+        <input
+          type="categoria"
+          id="categoria"
+          name="categoria"
+          placeholder="Digite sua categoria"
+        />
+        <br />
+      </div>
+      <div>
+        <br />
+        <label for="mensagem">Observações:</label>
+        <textarea
+          id="mensagem"
+          name="usuario_mensagem"
+          rows="4"
+          cols="50"
+        ></textarea>
+        <br />
+      </div>
 
-    <input type="radio" id="nao" name="newsletter" value="n" />
-    <label for="nao">Não, obrigado</label>
-  </div>
-</form>
+      <div>
+        <br />
+        <button type="submit">Enviar Formulário</button>
+        <br />
+      </div>
 
-<h3>Times inscritos</h3>
+      <div>
+        <p>
+          Você aceita participar do campeonato estando ciente dos custos
+          logísticos individuais? Nota: Ao responder positivamente, o atleta
+          declara estar ciente e de acordo de que todas as despesas com
+          transporte, alimentação, hospedagem e inscrição serão de sua integral
+          e exclusiva responsabilidade financeira. caso aceitar, está inscrito
+          no campeonato
+        </p>
+        <input type="radio" id="sim" name="newsletter" value="s" />
+        <label for="sim">Sim, estou ciente</label>
 
-<table border="1">
-  <thead>
-    <tr>
-      <th>Time</th>
-      <th>Responsável</th>
-      <th>Categoria</th>
-      <th>Status</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Spike Masters</td>
-      <td>Lucas Silva</td>
-      <td>Masculino</td>
-      <td>Confirmado</td>
-    </tr>
-    <tr>
-      <td>Super Vôlei</td>
-      <td>Mariana Costa</td>
-      <td>Feminino</td>
-      <td>Pendente</td>
-    </tr>
-    <tr>
-      <td>vago</td>
-      <td>vago</td>
-      <td>vago</td>
-      <td>vago</td>
-    </tr>
-    <tr>
-      <td>vago</td>
-      <td>vago</td>
-      <td>vago</td>
-      <td>vago</td>
-    </tr>
-    <tr>
-      <td>vago</td>
-      <td>vago</td>
-      <td>vago</td>
-      <td>vago</td>
-    </tr>
-  </tbody>
-</table>
+        <input type="radio" id="nao" name="newsletter" value="n" />
+        <label for="nao">Não, obrigado</label>
+      </div>
+    </form>
+
+    <h3 style="color: rgb(51, 124, 192);">Times inscritos</h3>
+
+    <table border="1" id="tabela">
+      <thead>
+        <tr>
+          <th>Time</th>
+          <th>Responsável</th>
+          <th>Categoria</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Spike Masters</td>
+          <td>Lucas Silva</td>
+          <td>Masculino</td>
+          <td>Confirmado</td>
+        </tr>
+        <tr>
+          <td>Super Vôlei</td>
+          <td>Mariana Costa</td>
+          <td>Feminino</td>
+          <td>Pendente</td>
+        </tr>
+        <tr>
+          <td>vago</td>
+          <td>vago</td>
+          <td>vago</td>
+          <td>vago</td>
+        </tr>
+        <tr>
+          <td>vago</td>
+          <td>vago</td>
+          <td>vago</td>
+          <td>vago</td>
+        </tr>
+        <tr>
+          <td>vago</td>
+          <td>vago</td>
+          <td>vago</td>
+          <td>vago</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
