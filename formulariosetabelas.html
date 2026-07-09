@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/styles.css" />
     <style>
       body {
         background-color: lightblue;
@@ -92,7 +92,17 @@
 
       <div>
         <br />
-        <button type="submit">Enviar Formulário</button>
+        <button type="submit" id="enviarformulario">
+          Enviar Formulário
+          <style>
+            #enviarformulario {
+              text-align: center;
+              color: var(--Powder-Blue);
+
+              background-color: var(--Pale-Sky);
+            }
+          </style>
+        </button>
         <br />
       </div>
 
@@ -113,7 +123,7 @@
       </div>
     </form>
 
-    <h3 style="color: rgb(51, 124, 192);">Times inscritos</h3>
+    <h3 style="color: rgb(51, 124, 192)">Times inscritos</h3>
 
     <table border="1" id="tabela">
       <thead>

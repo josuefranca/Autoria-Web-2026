@@ -1,14 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Geo:ital@0;1&display=swap");
+
+body {
+  font-family: "Geo", Arial, Helvetica, sans-serif0;
+}
+
 h3 {
-    font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
+
+  font-family: "Geo";
 }
 
 #tabela {
-    text-align: center;
-    color: rgb(13, 108, 139);
-    background-color: rgb(65, 162, 194);
-
+  text-align: center;
+  color: rgb(13, 108, 139);
+  background-color: #a0ccfb;
 }
- .negrito {
-   font-weight: ;
+.negrito {
+  font-weight:;
+}
 
- }
+#enviarformulario {
+  text-align: center;
+  color: #93acb5;
+  background-color: var(--Dim-Grey);
+}
+
+:root {
+  --Dim-Grey: #6c756b;
+  --Cool-Steel: #93acb5;
+  --Powder-Blue: #95b9d6;
+  --Baby-Blue-Ice: #96c5f7;
+  --Icy-Blue: #a9d3ff;
+  --Pale-Sky: #d2e6ff;
+}
