@@ -12,18 +12,15 @@
   --Twilight-Indigo: #1d3354;
 }
 
+/* CSS Resets */
+
+
 body {
   font-family: "Geo", Arial, Helvetica, sans-serif;
   font-family: "Quicksand", Arial, Helvetica, sans-serif;
 
   background-color: #d2e6ff;
   color: #1d3354;
-}
-  
-p {
-font family
-
-
 }
 
 h3 {
@@ -54,13 +51,32 @@ img {
 }
 
 #nav-sections ul {
- list-style-type: nome;
-
-
+  list-style-type: none;
 }
 
-#nav-section li {
-dispaly: inline-
-
-
+#nav-sections li {
+  display: inline-block;
 }
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--sky);
+  background-color: var(--blue-slat);
+  border-radius: 5px;
+}
+
+a:hover {
+  color: var(--Icy-Blue);
+  box-shadow: 0 0 10px var(--Dim-Grey);
+}
+
+#nav-links {
+  color: var(--Twilight-Indigo);
+  ul {
+    list-style-type: none;
+  }
+}
+  
+.fonte-maior
+size

@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Geo:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Henny+Penny&family=Quicksand:wght@300..700&display=swap");
+
+
+ :root {
+  --Dim-Grey: #6c756b;
+  --Cool-Steel: #93acb5;
+  --Powder-Blue: #95b9d6;
+  --Baby-Blue-Ice: #96c5f7;
+  --Icy-Blue: #a9d3ff;
+  --Pale-Sky: #d2e6ff;
+  --Twilight-Indigo: #1d3354;
+}
+ h1, h2, h3, h4, h5, h6 {
+font-family: 'Henny Penny', Arial, Helvetica, sans-serif;
+ color: var(--Twilight-Indigo);
+ background-color: var(--Pale-Sky);
+ }
+
+ body {    
+font-family:'Quicksand', arial, helvetica, sans-serif;
+  background-color: var(--Powder-Blue)
+color: var(--Twilight-Indigo);
+     
+ }
