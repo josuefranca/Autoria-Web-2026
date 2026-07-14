@@ -1,0 +1,131 @@
+/* Importação limpa das fontes do Google */
+@import url("https://fonts.googleapis.com/css2?family=Average+Sans&family=Geo:ital@0;1&family=Pinyon+Script&family=Quicksand:wght@300..700&display=swap");
+
+/* CORRIGIDO: Usando :root (com dois pontos) para que as variáveis funcionem globalmente */
+:root {
+  --Pacific-Cyan: #5497a7;
+  --Dark-Cyan: #50858b;
+  --Tropical-Teal: #62a8ac;
+  --Pearl-Aqua: #a1d2ce;
+  --Twilight-Indigo: #2c3e50; /* Uma cor escura para o fundo do menu de navegação */
+  --White: #ffffff;
+}
+
+body {
+  font-family: "Average Sans", Arial, Helvetica, sans-serif;
+  background-color: var(--Pearl-Aqua); /* CORRIGIDO: Corrigido o erro de digitação "beckgorund-color" */
+  color: var(--Twilight-Indigo); /* Cor principal do texto para dar boa leitura */
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: var(--Tropical-Teal);
+  color: var(--White); /* Letras brancas para destacar no fundo azul */
+  text-align: center;
+  padding: 40px 10px;
+}
+
+header h1 {
+  font-family: "Pinyon Script", cursive, sans-serif;
+  font-size: 4rem;
+  margin: 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Menu de Navegação */
+nav {
+  background-color: var(--Twilight-Indigo);
+  text-align: center;
+}
+
+nav ul {
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block; 
+} /* CORRIGIDO: Fechamento da chave que estava faltando no seu código */
+
+nav a {
+  display: block;
+  padding: 15px 25px;
+  text-decoration: none; 
+  font-weight: bold;
+  font-family: "Quicksand", sans-serif;
+  color: var(--Pearl-Aqua); /* Links começam com um tom suave de azul */
+  transition: all 0.3s ease;
+}
+
+/* Efeito de hover no menu */
+nav a:hover {
+  color: var(--White);
+  background-color: var(--Pacific-Cyan);
+}
+
+/* Seções de Conteúdo */
+.titulo-secao {
+  font-family: "Quicksand", sans-serif;
+  font-size: 2.2rem;
+  color: var(--Dark-Cyan);
+  border-bottom: 3px solid var(--Pacific-Cyan);
+  padding-bottom: 10px;
+  margin-top: 0;
+}
+
+#inicio {
+  background-color: var(--White); /* Fundo branco para destacar o texto */
+  border-radius: 8px;
+  border-left: 10px solid var(--Pacific-Cyan); /* Detalhe lateral na cor da paleta */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+#inicio h2 {
+  font-family: "Geo", sans-serif;
+  font-size: 2.5rem;
+  color: var(--Dark-Cyan);
+  margin-top: 0;
+}
+
+#programacao, #contato {
+  background-color: var(--White);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Cards de Programação */
+/* CORRIGIDO: Adicionado o ponto '.' antes de card-programa */
+.card-programa {
+  background-color: var(--Pearl-Aqua); /* Fundo sutil do card */
+  border: 1px solid var(--Tropical-Teal);
+  border-radius: 8px; 
+  padding: 20px;
+  margin-bottom: 15px;
+  font-size: 1rem; 
+  color: var(--Dark-Cyan);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.card-programa h3 {
+  font-family: "Geo", monospace;
+  font-size: 1.8rem;
+  margin-top: 0;
+  color: var(--Twilight-Indigo);
+}
+
+footer {
+  background-color: var(--Dark-Cyan);
+  color: var(--White);
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
